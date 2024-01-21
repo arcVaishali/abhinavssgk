@@ -9,7 +9,7 @@
         box-sizing: border-box;
       }
       .controls {
-        display:flex;
+        display: flex;
         flex-direction: row;
         background-color: rgb(15, 82, 186);
         padding: 20px;
@@ -35,14 +35,27 @@
         color: white;
         padding: 30px;
       }
-      .controls .login-text{
-        position:relative;
-        left:1000px;
-        color:white ;
-        text-transform:capitalize;
-        font-size:15px;
+      .controls .login-text {
+        position: relative;
+        left: 1000px;
+        color: white;
+        text-transform: capitalize;
+        font-size: 15px;
         text-decoration: underline;
       }
+      /* iframe {
+        border: none;
+        overflow: hidden; /*Hide scrollbars from the iframe content*/
+        /* scrollbar-width: thin; For Firefox */
+        /* -ms-overflow-style: none; IE and Edge */
+        /* scrollbar-width: none; Firefox */
+      /* } */  */
+      /*
+
+      iframe::-webkit-scrollbar {
+        width: 0; /* For Chrome, Safari, and Opera */
+        /* display: none; */
+      /* */ 
     </style>
   </head>
 
@@ -79,10 +92,15 @@
     </marquee>
 
     <p>
-      <img src="./assets/SKWEBSITE.png" height=60% width=100% />
+      <img src="./assets/SKWEBSITE.png" height="60%" width="100%" />
       <br style="width: 100%" />
 
-      <iframe src="./pages/frame_cc.html" height="70%" width="70%"></iframe>
+      <iframe
+        src="./pages/frame_cc.html"
+        height="70%"
+        width="70%"
+        scrolling="no"
+      ></iframe>
       <iframe src="./pages/news_a.html" height="70%" width="20%"></iframe>
       <iframe src="./pages/cbse_a.html" height="20%" width="20%"></iframe>
       <iframe src="./pages/nda_b.html" height="20%" width="100%"></iframe>
