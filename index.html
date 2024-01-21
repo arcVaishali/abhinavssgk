@@ -3,8 +3,16 @@
     <title>HOME</title>
     <link href="./output.css" rel="stylesheet" />
     <style type="text/css">
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
       .controls {
+        display:flex;
+        flex-direction: row;
         background-color: rgb(15, 82, 186);
+        padding: 20px;
       }
 
       .hypes {
@@ -23,21 +31,27 @@
         text-decoration: none;
       }
       .footer {
-        background-color: slategray;
+        background-color: black;
         color: white;
         padding: 30px;
+      }
+      .controls .login-text{
+        position:relative;
+        left:1000px;
+        color:white ;
+        text-transform:capitalize;
+        font-size:15px;
+        text-decoration: underline;
       }
     </style>
   </head>
 
   <body>
     <div class="controls">
-      <h4>
-        <a href="url">LOGIN'S</a>
-      </h4>
+      <a class="login-text" href="url">LOGIN</a>
     </div>
 
-    <div class="hypes" style="text-indent: 80%">Menu</div>
+    <div class="hypes" style="text-indent: 85%">Menu</div>
 
     <marquee vspace="30">
       <a
@@ -65,7 +79,7 @@
     </marquee>
 
     <p>
-      <img src="./assets/SKWEBSITE.png" height:60% width:100% />
+      <img src="./assets/SKWEBSITE.png" height=60% width=100% />
       <br style="width: 100%" />
 
       <iframe src="./pages/frame_cc.html" height="70%" width="70%"></iframe>
